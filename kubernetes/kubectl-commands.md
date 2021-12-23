@@ -52,3 +52,31 @@
 
 ## kubectl get namespaces
   CLI para a listagem das namespaces
+
+## kubectl cluster-info
+  CLI para mostrar as infos gerais do cluster
+
+## kubectl create namespace "namespcace name"
+  CLI para a criação de namespaces
+
+## kubectl apply -f "file name" --namespace="namespace name"
+  CLI para a criação de componentes dentro de uma namespace específica
+  
+  # Podemos tambem utilizar sem a flag --namespace declarando dentro do
+  # metadata um campo chamado namespace com o nome da mesma.
+
+## kubectl get pods -n "namespace name"
+  CLI para a listagem de pods dentro de uma namespace em específico
+
+## kubectl get deployments -n "namespace name"
+  CLI para a listagem de deployments dentro de uma namespace em específico
+
+## Instalação kubens
+  # brew install kubens
+
+## kubens
+  CLI para mostrar todas as namespaces e a namespace ativa
+
+## kubens "namespace name"
+  CLI para alterar a namespace ativa
+
