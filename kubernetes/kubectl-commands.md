@@ -70,6 +70,9 @@
 
 ## kubectl get deployments -n "namespace name"
   CLI para a listagem de deployments dentro de uma namespace em específico
+  
+## kubectl get hpa -n "namespace name"
+  CLI para mostrar o HPA do cluster
 
 ## Instalação kubens
   brew install kubens
