@@ -115,4 +115,4 @@ CLI para "paralizar" o node parametrizado
 
 <strong>"Drain":</strong> O comando drain "Paraliza" o node parametrizado e transfere os pods do deployment para outros pods com espacos disponiveis.
 
-<strong>"DaemonSet System Pods":</strong> Sao pods criados pelo sistema do K8S ou seja, quando executamos o comando com a flag --ignore-daemonsets estamos deletando permanentemente os DaemonSet System Pods, por isso precisamos ter muita cautela e conhecimento do ambiente antes de executar esse comando
+<strong>"DaemonSet System Pods":</strong> Sao pods criados pelo sistema do K8S ou seja, quando executamos o comando com a flag --ignore-daemonsets --force estamos deletando permanentemente os DaemonSet System Pods, por isso precisamos ter muita cautela e conhecimento do ambiente antes de executar esse comando
