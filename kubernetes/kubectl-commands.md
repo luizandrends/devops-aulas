@@ -36,7 +36,7 @@ CLI para pegar os logs do pod
 
 CLI para entrar no bash do pod
 
-## kubectl delete deplo yment "deployment-name"
+## kubectl delete deployment "deployment-name"
 
 CLI para excluir um pod em específico
 
@@ -116,3 +116,32 @@ CLI para "paralizar" o node parametrizado
 <strong>"Drain":</strong> O comando drain "Paraliza" o node parametrizado e transfere os pods do deployment para outros pods com espacos disponiveis.
 
 <strong>"DaemonSet System Pods":</strong> Sao pods criados pelo sistema do K8S ou seja, quando executamos o comando com a flag --ignore-daemonsets --force estamos deletando permanentemente os DaemonSet System Pods, por isso precisamos ter muita cautela e conhecimento do ambiente antes de executar esse comando
+
+## kubectl uncordon "node-name"
+
+CLI para voltar o node parametrizado ao uso
+
+    Este comando nao voltara os pods antigos ao seu lugar.
+
+## kubectl get ingresses
+
+CLI para listar todos os ingress do cluster
+
+## kubectl get pods -n namespace --selector k8s-app=label
+
+CLI para pegar os pods em uma namespace filtrando pela label
+
+## kubectl exec pod-name -c containerName -- comando
+
+CLI para executar acoes dentro de um container de um pod
+
+## kubectl get pv
+
+CLI para pegar os volumes persistentes do cluster
+
+## kubectl create deployment my-deployment --image=imageName
+
+CLI para criar deployment sem um arquivo yaml
+
+
+
