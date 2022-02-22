@@ -143,5 +143,28 @@ CLI para pegar os volumes persistentes do cluster
 
 CLI para criar deployment sem um arquivo yaml
 
+## kubectl get sa
 
+CLI para a listagem dos service account
 
+## kubectl get sa -n "namespace"
+
+CLI para a listagem dos service account em uma namespace
+
+## kubectl create sa -n "namespace"
+
+CLI para a criacao de um service account
+
+    Os service accounts diferente das roles funcionam como "permissoes" para os pods
+
+## kubectl top pod -n namespace --sort-by JSONPATH --selector app=POD LABEL
+
+CLI para mostrar as metricas de uso de um pod
+
+## kubectl "COMMAND" --dry-run=client
+
+CLI que faz um "plan"
+
+## kubectl label nodes <node name> special=true
+
+Cli para colocar label no node desejado
