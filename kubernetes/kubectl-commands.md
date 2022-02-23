@@ -168,3 +168,23 @@ CLI que faz um "plan"
 ## kubectl label nodes <node name> special=true
 
 Cli para colocar label no node desejado
+
+## kubectl edit "component type" "component name"
+
+Cli para abrir um editor e editar o componente desejado
+
+## kubectl scale deployment.v1.apps/"deployment-name" --replicas="desired replicas"
+
+Cli para fazer scale (down ou up) em um deployment
+
+## kubectl rollout status deployment.v1.apps/"deployment-name"
+
+Cli para fazer o rollout da ultima alteração feita
+
+## kubectl set image deployment/deployment-name deployment-name=image:version
+
+Cli para trocar uma imagem de um deployment
+
+## kubectl rollout history deployment.v1.apps/my-deployment
+
+Cli para ver as revisions de um deployment
