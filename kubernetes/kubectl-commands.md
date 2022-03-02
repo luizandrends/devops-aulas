@@ -188,3 +188,8 @@ Cli para trocar uma imagem de um deployment
 ## kubectl rollout history deployment.v1.apps/my-deployment
 
 Cli para ver as revisions de um deployment
+
+## kubectl get endpoints "service-name"
+CLI para listar os endpoints de um servico
+
+Caso seja um deployment com multiplos pods, o comando ira retornar uma lista nesse formato: 192.168.126.51:80,192.168.126.52:80,192.168.194.125:80 
