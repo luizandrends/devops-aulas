@@ -193,3 +193,14 @@ Cli para ver as revisions de um deployment
 CLI para listar os endpoints de um servico
 
 Caso seja um deployment com multiplos pods, o comando ira retornar uma lista nesse formato: 192.168.126.51:80,192.168.126.52:80,192.168.194.125:80 
+
+## kubectl exec pod-name -- nslookup service ip
+CLI para mostrar o DNS do servico.
+
+A url consiste em: nome-do-servico.namespace.svc.cluster.local
+
+## kubectl top pod -n web --sort-by cpu --selector app=auth
+CLI para fazer sort pela cpu de um pod com a label app=auth
+
+## > /path/file.txt
+Flag para salvar outputs de comandos em arquivos
