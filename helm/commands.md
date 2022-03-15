@@ -28,11 +28,11 @@ CLI para lista os repositorios. Mostra somente os repositorios cacheados localme
 
 CLI para fazer o update dos repositorios locais
 
-## helm repo remove <repo-name>
+## helm repo remove <package-name>
 
 CLI para remover os repositorios do helm providenciando a URL
 
-##  helm install <repo-name> <path> --dry-run 
+##  helm install <package-name> <path> --dry-run 
 
 CLI para gerar o manifesto helm
 
@@ -40,7 +40,7 @@ CLI para gerar o manifesto helm
 
 CLI para mostrar o values.yaml do chart
 
-## helm install <chart-name> <path> --set image.<image-name> --dry-run
+## helm install <package-name> <path> --set image.<image-name> --dry-run
 
 CLI para sobrescrever a imagem do values
 
@@ -48,7 +48,12 @@ CLI para sobrescrever a imagem do values
 
   helm install demo ./example --set image.tag=latest --set service.type=NodePort --dry-run
 
-## helm install <chart-name> <path> -f <file-path> --dry-run
+## helm install <package-name> <path> -f <file-path> --dry-run
 
 CLI para sobrescrever o chart baseado em um arquivo
+
+
+## helm status <package-name>
+
+CLI para mostrar o status de release do pacote
 
