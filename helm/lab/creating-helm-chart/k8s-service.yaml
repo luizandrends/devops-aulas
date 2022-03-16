@@ -1,0 +1,11 @@
+metadata:
+  name: blog
+spec:
+  type: NodePort
+  selector:
+    app: blog
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 2368
+    nodePort: 30007
